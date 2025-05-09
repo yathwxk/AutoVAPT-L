@@ -1,0 +1,51 @@
+{
+  "session_id": "20250507_015739",
+  "targets": {
+    "ips": [
+      "10.0.0.1",
+      "192.168.1.1"
+    ],
+    "urls": [
+      "https://example.com",
+      "http://testsite.local"
+    ]
+  },
+  "scan_results": {
+    "nmap": [
+      {
+        "target": "10.0.0.1",
+        "timestamp": "20250507_015739",
+        "output_files": {
+          "xml": "D:\\CyberSec\\vapt02\\output\\scan_20250507_015739\\nmap\\10.0.0.1_20250507_015739.xml",
+          "json": "D:\\CyberSec\\vapt02\\output\\scan_20250507_015739\\nmap\\10.0.0.1_20250507_015739.json"
+        },
+        "results": {
+          "scan_info": {
+            "syn": {
+              "protocol": "tcp",
+              "numservices": "1000"
+            }
+          },
+          "hosts": []
+        }
+      },
+      {
+        "target": "192.168.1.1",
+        "timestamp": "20250507_015749",
+        "output_files": {
+          "xml": "D:\\CyberSec\\vapt02\\output\\scan_20250507_015739\\nmap\\192.168.1.1_20250507_015749.xml",
+          "json": "D:\\CyberSec\\vapt02\\output\\scan_20250507_015739\\nmap\\192.168.1.1_20250507_015749.json"
+        },
+        "results": {
+          "scan_info": {
+            "syn": {
+              "protocol": "tcp",
+              "numservices": "1000"
+            }
+          },
+          "hosts": []
+        }
+      }
+    ]
+  }
+}

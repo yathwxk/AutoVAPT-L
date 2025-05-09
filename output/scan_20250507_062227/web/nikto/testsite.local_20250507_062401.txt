@@ -1,0 +1,3 @@
+- ***** TLS/SSL support not available (see docs for SSL install) *****
+- Nikto v2.5.0
+---------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+{
+  "scan_info": {
+    "syn": {
+      "protocol": "tcp",
+      "numservices": "1000"
+    }
+  },
+  "hosts": []
+}

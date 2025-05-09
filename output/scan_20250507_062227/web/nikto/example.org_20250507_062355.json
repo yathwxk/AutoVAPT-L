@@ -1,0 +1,1 @@
+[{"host":"example.org","ip":"96.7.128.192","port":"80","banner":"","vulnerabilities":[{"id": "0","method":"GET","url":"/","msg":"Unable to connect to example.org:80."}]}]

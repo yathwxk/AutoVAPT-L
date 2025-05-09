@@ -1,0 +1,214 @@
+{
+  "timestamp": "20250507_062227",
+  "output_dir": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227",
+  "nmap_results": [
+    {
+      "target": "10.0.0.1",
+      "timestamp": "20250507_062231",
+      "output_files": {
+        "xml": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\nmap\\10.0.0.1_20250507_062231.xml",
+        "json": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\nmap\\10.0.0.1_20250507_062231.json"
+      },
+      "results": {
+        "scan_info": {
+          "syn": {
+            "protocol": "tcp",
+            "numservices": "1000"
+          }
+        },
+        "hosts": []
+      }
+    },
+    {
+      "target": "192.168.1.1",
+      "timestamp": "20250507_062240",
+      "output_files": {
+        "xml": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\nmap\\192.168.1.1_20250507_062240.xml",
+        "json": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\nmap\\192.168.1.1_20250507_062240.json"
+      },
+      "results": {
+        "scan_info": {
+          "syn": {
+            "protocol": "tcp",
+            "numservices": "1000"
+          }
+        },
+        "hosts": []
+      }
+    }
+  ],
+  "web_results": {
+    "wapiti": [
+      {
+        "status": "error",
+        "command": "wapiti -u https://google.com -f json -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\google.com_20250507_062250 -m xss,sql,exec,file,upload,ssrf,redirect,xxe,crlf,htaccess --scope folder -d 2 -t 30",
+        "url": "https://google.com",
+        "timestamp": "20250507_062250",
+        "return_code": 0,
+        "stdout": "\n     __      __               .__  __  .__________\n    /  \\    /  \\_____  ______ |__|/  |_|__\\_____  \\\n    \\   \\/\\/   /\\__  \\ \\____ \\|  \\   __\\  | _(__  <\n     \\        /  / __ \\|  |_> >  ||  | |  |/       \\\n      \\__/\\  /  (____  /   __/|__||__| |__/______  /\n           \\/        \\/|__|                      \\/\nWapiti 3.2.4 (wapiti-scanner.github.io)\n[*] Saving scan state, please wait...\n\n[*] Launching module xss\n\n[*] Launching module sql\n\n[*] Launching module exec\n\n[*] Launching module file\n\n[*] Launching module upload\n\n[*] Launching module ssrf\n\n[*] Launching module redirect\n\n[*] Launching module xxe\n\n[*] Launching module crlf\n\n[*] Launching module htaccess\n\n[*] Generating report...\nA report has been generated in the file D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\google.com_20250507_062250\n",
+        "stderr": "",
+        "error": "Output file not created"
+      },
+      {
+        "status": "error",
+        "command": "wapiti -u http://example.org -f json -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\example.org_20250507_062302 -m xss,sql,exec,file,upload,ssrf,redirect,xxe,crlf,htaccess --scope folder -d 2 -t 30",
+        "url": "http://example.org",
+        "timestamp": "20250507_062302",
+        "return_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\wapiti.exe\\__main__.py\", line 7, in <module>\n    sys.exit(wapiti_asyncio_wrapper())\n             ~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\wapitiCore\\main\\wapiti.py\", line 509, in wapiti_asyncio_wrapper\n    asyncio.run(wapiti_main())\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py\", line 195, in run\n    return runner.run(main)\n           ~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\asyncio\\base_events.py\", line 725, in run_until_complete\n    return future.result()\n           ~~~~~~~~~~~~~^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\wapitiCore\\main\\wapiti.py\", line 124, in wapiti_main\n    print_banner()\n    ~~~~~~~~~~~~^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\wapitiCore\\main\\banners.py\", line 51, in print_banner\n    print(choice(banners))\n    ~~~~~^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\yathw\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\encodings\\cp1252.py\", line 19, in encode\n    return codecs.charmap_encode(input,self.errors,encoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeEncodeError: 'charmap' codec can't encode characters in position 3-5: character maps to <undefined>\n",
+        "error": "Output file not created"
+      },
+      {
+        "status": "error",
+        "command": "wapiti -u http://example.com -f json -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\example.com_20250507_062306 -m xss,sql,exec,file,upload,ssrf,redirect,xxe,crlf,htaccess --scope folder -d 2 -t 30",
+        "url": "http://example.com",
+        "timestamp": "20250507_062306",
+        "return_code": 0,
+        "stdout": "\n     __      __               .__  __  .__________\n    /  \\    /  \\_____  ______ |__|/  |_|__\\_____  \\\n    \\   \\/\\/   /\\__  \\ \\____ \\|  \\   __\\  | _(__  <\n     \\        /  / __ \\|  |_> >  ||  | |  |/       \\\n      \\__/\\  /  (____  /   __/|__||__| |__/______  /\n           \\/        \\/|__|                      \\/\nWapiti 3.2.4 (wapiti-scanner.github.io)\n[*] Saving scan state, please wait...\n\n[*] Launching module xss\n\n[*] Launching module sql\n\n[*] Launching module exec\n\n[*] Launching module file\n\n[*] Launching module upload\n\n[*] Launching module ssrf\n\n[*] Launching module redirect\n\n[*] Launching module xxe\n\n[*] Launching module crlf\n\n[*] Launching module htaccess\n\n[*] Generating report...\nA report has been generated in the file D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\example.com_20250507_062306\n",
+        "stderr": "",
+        "error": "Output file not created"
+      },
+      {
+        "status": "error",
+        "command": "wapiti -u http://testsite.local -f json -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\testsite.local_20250507_062321 -m xss,sql,exec,file,upload,ssrf,redirect,xxe,crlf,htaccess --scope folder -d 2 -t 30",
+        "url": "http://testsite.local",
+        "timestamp": "20250507_062321",
+        "return_code": 0,
+        "stdout": "\n     __      __               .__  __  .__________\n    /  \\    /  \\_____  ______ |__|/  |_|__\\_____  \\\n    \\   \\/\\/   /\\__  \\ \\____ \\|  \\   __\\  | _(__  <\n     \\        /  / __ \\|  |_> >  ||  | |  |/       \\\n      \\__/\\  /  (____  /   __/|__||__| |__/______  /\n           \\/        \\/|__|                      \\/\nWapiti 3.2.4 (wapiti-scanner.github.io)\n[!] ConnectError with URL http://testsite.local/\n[*] Saving scan state, please wait...\n\n[*] Launching module xss\n\n[*] Launching module sql\n\n[*] Launching module exec\n\n[*] Launching module file\n\n[*] Launching module upload\n\n[*] Launching module ssrf\n\n[*] Launching module redirect\n\n[*] Launching module xxe\n\n[*] Launching module crlf\n\n[*] Launching module htaccess\n\n[*] Generating report...\nA report has been generated in the file D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\testsite.local_20250507_062321\n",
+        "stderr": "",
+        "error": "Output file not created"
+      },
+      {
+        "status": "error",
+        "command": "wapiti -u https://example.com -f json -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\example.com_20250507_062337 -m xss,sql,exec,file,upload,ssrf,redirect,xxe,crlf,htaccess --scope folder -d 2 -t 30",
+        "url": "https://example.com",
+        "timestamp": "20250507_062337",
+        "return_code": 0,
+        "stdout": "\n     __    __            _ _   _ _____\n    / / /\\ \\ \\__ _ _ __ (_) |_(_)___ /\n    \\ \\/  \\/ / _` | '_ \\| | __| | |_ \\\n     \\  /\\  / (_| | |_) | | |_| |___) |\n      \\/  \\/ \\__,_| .__/|_|\\__|_|____/\n                  |_|                 \nWapiti 3.2.4 (wapiti-scanner.github.io)\n[*] Saving scan state, please wait...\n\n[*] Launching module xss\n\n[*] Launching module sql\n\n[*] Launching module exec\n\n[*] Launching module file\n\n[*] Launching module upload\n\n[*] Launching module ssrf\n\n[*] Launching module redirect\n\n[*] Launching module xxe\n\n[*] Launching module crlf\n\n[*] Launching module htaccess\n\n[*] Generating report...\nA report has been generated in the file D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\wapiti\\example.com_20250507_062337\n",
+        "stderr": "",
+        "error": "Output file not created"
+      }
+    ],
+    "nikto": [
+      {
+        "status": "success",
+        "command": "perl C:\\Users\\yathw\\nikto\\program\\nikto.pl -h http://example.org/ -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\example.org_20250507_062355.json -Format json -Tuning 1234567890abcde",
+        "url": "http://example.org/",
+        "timestamp": "20250507_062355",
+        "return_code": 0,
+        "stdout": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- Nikto v2.5.0\n---------------------------------------------------------------------------\n",
+        "stderr": "",
+        "results": [
+          {
+            "host": "example.org",
+            "ip": "96.7.128.192",
+            "port": "80",
+            "banner": "",
+            "vulnerabilities": [
+              {
+                "id": "0",
+                "method": "GET",
+                "url": "/",
+                "msg": "Unable to connect to example.org:80."
+              }
+            ]
+          }
+        ],
+        "output_file": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\example.org_20250507_062355.json"
+      },
+      {
+        "status": "success",
+        "command": "perl C:\\Users\\yathw\\nikto\\program\\nikto.pl -h http://example.com/ -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\example.com_20250507_062358.json -Format json -Tuning 1234567890abcde",
+        "url": "http://example.com/",
+        "timestamp": "20250507_062358",
+        "return_code": 0,
+        "stdout": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- Nikto v2.5.0\n---------------------------------------------------------------------------\n",
+        "stderr": "",
+        "results": [
+          {
+            "host": "example.com",
+            "ip": "96.7.128.198",
+            "port": "80",
+            "banner": "",
+            "vulnerabilities": [
+              {
+                "id": "0",
+                "method": "GET",
+                "url": "/",
+                "msg": "Unable to connect to example.com:80."
+              }
+            ]
+          }
+        ],
+        "output_file": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\example.com_20250507_062358.json"
+      },
+      {
+        "status": "success",
+        "command": "perl C:\\Users\\yathw\\nikto\\program\\nikto.pl -h http://testsite.local/ -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\testsite.local_20250507_062401.json -Format json -Tuning 1234567890abcde",
+        "url": "http://testsite.local/",
+        "timestamp": "20250507_062401",
+        "return_code": 0,
+        "stdout": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- Nikto v2.5.0\n---------------------------------------------------------------------------\n",
+        "stderr": "",
+        "results": [
+          {
+            "host": "",
+            "ip": "",
+            "port": "80",
+            "banner": "",
+            "vulnerabilities": [
+              {
+                "id": "0",
+                "method": "GET",
+                "url": "/",
+                "msg": "ERROR: Cannot resolve hostname 'testsite.local' because 'nodename nor servname provided, or not known'."
+              }
+            ]
+          }
+        ],
+        "output_file": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\testsite.local_20250507_062401.json"
+      },
+      {
+        "status": "partial_success",
+        "command": "perl C:\\Users\\yathw\\nikto\\program\\nikto.pl -h https://google.com/ -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\google.com_20250507_062412.json -Format json -Tuning 1234567890abcde",
+        "url": "https://google.com/",
+        "timestamp": "20250507_062412",
+        "return_code": 1,
+        "stdout": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- ERROR: -ssl was specified but TLS/SSL is not available.\n",
+        "stderr": "",
+        "results": {
+          "raw_output": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- ERROR: -ssl was specified but TLS/SSL is not available.\n"
+        },
+        "output_file": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\google.com_20250507_062412.txt"
+      },
+      {
+        "status": "partial_success",
+        "command": "perl C:\\Users\\yathw\\nikto\\program\\nikto.pl -h https://example.com/ -o D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\example.com_20250507_062415.json -Format json -Tuning 1234567890abcde",
+        "url": "https://example.com/",
+        "timestamp": "20250507_062415",
+        "return_code": 1,
+        "stdout": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- ERROR: -ssl was specified but TLS/SSL is not available.\n",
+        "stderr": "",
+        "results": {
+          "raw_output": "- ***** TLS/SSL support not available (see docs for SSL install) *****\n- ERROR: -ssl was specified but TLS/SSL is not available.\n"
+        },
+        "output_file": "D:\\CyberSec\\vapt02\\output\\scan_20250507_062227\\web\\nikto\\example.com_20250507_062415.txt"
+      }
+    ]
+  },
+  "targets": {
+    "ips": [
+      "10.0.0.1",
+      "192.168.1.1"
+    ],
+    "urls": [
+      "https://google.com",
+      "http://example.org",
+      "http://example.com",
+      "http://testsite.local",
+      "https://example.com"
+    ],
+    "invalid_urls": []
+  }
+}
