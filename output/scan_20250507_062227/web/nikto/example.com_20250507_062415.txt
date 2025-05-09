@@ -1,2 +1,0 @@
-- ***** TLS/SSL support not available (see docs for SSL install) *****
-- ERROR: -ssl was specified but TLS/SSL is not available.

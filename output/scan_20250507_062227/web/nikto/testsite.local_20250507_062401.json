@@ -1,1 +1,0 @@
-[{"host":"","ip":"","port":"80","banner":"","vulnerabilities":[{"id": "0","method":"GET","url":"/","msg":"ERROR: Cannot resolve hostname 'testsite.local' because 'nodename nor servname provided, or not known'."}]}]

@@ -1,1 +1,0 @@
-# AutoVAPT-L has no external Python dependencies beyond the standard library 
